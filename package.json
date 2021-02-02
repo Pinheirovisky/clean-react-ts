@@ -31,12 +31,16 @@
     "git-commit-msg-linter": "^2.7.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "typescript": "^4.0.3"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/faker": "^5.1.5",
     "@types/jest": "^26.0.14",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
     "eslint": "^7.9.0",
