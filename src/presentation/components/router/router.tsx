@@ -1,6 +1,6 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Login } from '@/presentation/pages'
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Login } from '@/presentation/pages';
 
 const Router: React.FC = () => (
   <BrowserRouter>
@@ -8,6 +8,6 @@ const Router: React.FC = () => (
       <Route path="/login" exact component={Login} />
     </Switch>
   </BrowserRouter>
-)
+);
 
-export default Router
+export default Router;
