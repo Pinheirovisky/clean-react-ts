@@ -29,8 +29,6 @@
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "quotes": [2, "single", { "avoidEscape": true }],
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }]
+    "react/jsx-uses-vars": "error"
   }
 }
