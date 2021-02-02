@@ -1,40 +1,5 @@
 @import "../../styles/color.scss";
 
-button {
-  background-color: $primary;
-  line-height: 60px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 300ms all;
-  position: relative;
-
-  &::before {
-    // transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all 300ms ease;
-    content: "";
-    width: 0;
-    height: 100%;
-    background-color: $primaryLight;
-    border-radius: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  & span {
-    color: $white;
-    mix-blend-mode: color-dodge;
-  }
-
-  &:hover::before {
-    background-color: $primaryLight;
-    color: $white;
-    width: 100%;
-  }
-}
-
 .login {
   display: flex;
   flex-direction: column;
@@ -60,6 +25,50 @@ button {
 
     .submit {
       margin-top: 32px;
+
+      background-color: $primary;
+      line-height: 60px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 300ms all;
+      position: relative;
+
+      &:enabled::before {
+        // transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 300ms ease;
+        content: "";
+        width: 0;
+        height: 100%;
+        background-color: $primaryLight;
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      & span {
+        color: $white;
+        mix-blend-mode: color-dodge;
+      }
+
+      &:hover::before {
+        background-color: $primaryLight;
+        color: $white;
+        width: 100%;
+      }
+
+      &:disabled,
+      &[disabled] {
+        background-color: $disabledBackground;
+        cursor: default;
+
+        & span {
+          color: $disabledColor;
+          mix-blend-mode: normal;
+        }
+      }
     }
 
     .link {
