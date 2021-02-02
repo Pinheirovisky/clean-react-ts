@@ -10,7 +10,6 @@ const Input: React.FC<Props> = (props: Props) => {
   }
 
   return (
-
     <div className={Styles.inputWrap}>
       <input {...props} readOnly onFocus={enableInput} />
       <span className={Styles.status}>&#128308;</span>
